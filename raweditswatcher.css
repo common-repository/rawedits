@@ -1,0 +1,107 @@
+@CHARSET "UTF-8";
+
+.raw-active .switch-raw {
+		background-color: #F4F4F4;
+		border-color: #CCCCCC #CCCCCC #F4F4F4;
+		color: #555555;
+}
+
+.raw-active .quicktags-toolbar, .raw-active .wp-editor-area {
+	display: none;
+}
+
+.html-active .wp-editor-raw, .tmce-active .wp-editor-raw,
+.html-active .raw-toolbar, .tmce-active .raw-toolbar {
+	display: none;
+}
+
+.wp-editor-raw {
+	box-shadow: none;
+	margin: 0;
+	width: 100%;
+	-moz-box-sizing: border-box;
+	border: 0 none;
+	display: block;
+	font-family: Consolas,Monaco,monospace;
+	line-height: 150%;
+	outline: 0 none;
+	padding: 10px;
+	background-color: #FFFFFF;
+	color: #333333;
+	border-radius: 3px 3px 3px 3px;
+	font-size: inherit;
+	font-weight: inherit;
+}
+
+.raw-toolbar {
+	border-bottom: 1px solid #AAAAAA;
+	border-top-left-radius: 3px;
+	border-top-right-radius: 3px;
+	min-height: 29px;
+	padding: 2px 8px 0;
+	background: -webkit-linear-gradient(bottom, #E5E5E5, #F4F4F4) repeat scroll 0 0 #EEEEEE;
+	background: linear-gradient(to top, #E5E5E5, #F4F4F4) repeat scroll 0 0 #EEEEEE;
+	outline: 0 none;
+	outline: 0 none;
+}
+
+.raw-toolbar input {
+	background: -webkit-linear-gradient(bottom, #E3E3E3, #FFFFFF) repeat scroll 0 0 #EEEEEE;
+	background: linear-gradient(to top, #E3E3E3, #FFFFFF) repeat scroll 0 0 #EEEEEE;
+	border: 1px solid #C3C3C3;
+	border-radius: 3px 3px 3px 3px;
+	color: #464646;
+	display: inline-block;
+	font: 12px/18px Arial,Helvetica,sans-serif normal;
+	margin: 2px 1px 4px;
+	min-width: 26px;
+	padding: 2px 4px;
+}
+
+.raw-toolbar input:hover {
+	background: none repeat scroll 0 0 #DDDDDD;
+	border-color: #AAAAAA;
+}
+
+.wp-core-ui .button-raw {
+	background-color: #888888;
+	background-image: -webkit-linear-gradient(top, #888888, #666666);
+	background-image: linear-gradient(to bottom, #888888, #666666);
+	border-color: #666666 #666666 #888888;
+	box-shadow: 0 1px 0 rgba(180, 180, 180, 0.5) inset;
+	color: #FFFFFF;
+	text-decoration: none;
+	text-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+}
+
+.wp-core-ui .button-raw.hover, .wp-core-ui .button-raw:hover, .wp-core-ui .button-raw.focus, .wp-core-ui .button-raw:focus {
+	background-color: #AAAAAA;
+	background-image: -webkit-linear-gradient(top, #AAAAAA, #777777);
+	background-image: linear-gradient(to bottom, #AAAAAA, #777777);
+	border-color: #777777;
+	box-shadow: 0 1px 0 rgba(180, 180, 180, 0.6) inset;
+	color: #FFFFFF;
+	text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.3);
+}
+
+.wp-core-ui .button-raw[disabled],.wp-core-ui .button-raw:disabled,.wp-core-ui .button-raw-disabled
+	{
+	color: #999999 !important;
+	background: #666666 !important;
+	border-color: #777777 !important;
+	-webkit-box-shadow: none !important;
+	box-shadow: none !important;
+	text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.1) !important;
+	cursor: default
+}
+
+.switch-tmce, .switch-html, .switch-raw {
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+.switch-tmce:focus, .switch-html:focus, .switch-raw:focus {
+	outline: none;
+}
